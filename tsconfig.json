@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"useDefineForClassFields": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"strict": true,
+		"jsx": "preserve",
+		"sourceMap": true,
+		"resolveJsonModule": true,
+		"allowSyntheticDefaultImports": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"types": ["vite/client", "node"],
+		"lib": ["esnext", "dom"]
+	},
+	"include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+	"exclude": ["node_modules"],
+	"vueCompilerOptions": {
+		"experimentalCompatMode": 2,
+		"experimentalTemplateCompilerOptions": {
+			"compatConfig": { "MODE": 2 }
+		}
+	}
+}
